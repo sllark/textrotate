@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	
+	<style>
+
+       @font-face {
+           font-family: growly;
+           src: url('Growly Grin.ttf');
+       }
+		
+		
+		*{
+			 margin: 0;
+			 padding: 0;
+			 border: 0;
+			 box-sizing: border-box;
+		}
+		
+		
+		body{
+			 width: 100vw;
+			 height: 100vh;
+			 background-color: #0cae3a;
+			 
+			 display: flex;
+			 justify-content: center;
+			 align-items: center;
+			 font-family: growly,sans-serif;
+		}
+		
+		
+		.textCont{
+			 display: flex;
+			 justify-content: flex-start;
+			 align-items: center;
+
+			 width: 850px;
+			 
+			 height: fit-content;
+          border: 1px solid;
+
+          --spanFont:130px;
+          transform: rotate(-2.94deg);
+		}
+		
+		.textCont>div{
+			 margin: 10px;
+		}
+		
+		.word{
+			 display: flex;
+		}
+		
+		.letter{
+			 display: flex;
+			 flex-flow: column;
+          align-items: flex-start;
+			 
+			 letter-spacing: -0.02em;
+			 /*line-height: 147px;*/
+			 
+			 min-height: 120px;
+			 height: 160px;
+			 overflow: hidden;
+		}
+		
+		.letter span{
+          font-size: var(--spanFont);
+          min-height: 120px;
+          min-width: 10px;
+          display: flex;
+          align-items: center;
+          margin: 15px 0;
+		}
+		
+		.hide{
+          width: 0px!important;
+          border-color: red;
+      }
+		
+	</style>
+	
+</head>
+<body>
+
+
+
+<div class="textCont">
+	
+	<div class="word">
+		<div class="letter">
+			<span>B</span>
+		</div>
+		<div class="letter">
+			<span>E</span>
+		</div>
+		<div class="letter">
+			<span>L</span>
+		</div>
+		<div class="letter">
+			<span>L</span>
+		</div>
+		<div class="letter">
+			<span>A</span>
+		</div>
+	</div>
+
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
